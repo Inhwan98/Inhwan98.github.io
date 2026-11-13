@@ -128,9 +128,12 @@
     }
     return html.join('\n');
   }
+  // GitHub Pages 는 파일을 10분까지 브라우저에 저장해 두게 한다.
+  // no-cache 는 매번 서버에 바뀌었는지 묻고, 그대로면 저장본을 쓴다(304). 고친 내용이 바로 보인다.
+  const FRESH = { cache: 'no-cache' };
   async function loadMd(path) {
     if (state.mdCache.has(path)) return state.mdCache.get(path);
-    const res = await fetch(path);
+    const res = await fetch(path, FRESH);
     if (!res.ok) throw new Error(`${path} 를 불러오지 못했습니다 (${res.status})`);
     const text = await res.text();
     state.mdCache.set(path, text);
@@ -516,7 +519,7 @@
   async function init() {
     initTheme();
     try {
-      const [site, tasks, logs] = await Promise.all(['data/site.json', 'data/tasks.json', 'data/devlog.json'].map((p) => fetch(p).then((r) => {
+      const [site, tasks, logs] = await Promise.all(['data/site.json', 'data/tasks.json', 'data/devlog.json'].map((p) => fetch(p, FRESH).then((r) => {
         if (!r.ok) throw new Error(`${p} (${r.status})`);
         return r.json();
       })));
