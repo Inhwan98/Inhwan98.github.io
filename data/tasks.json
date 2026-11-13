@@ -53,7 +53,7 @@
   {"key":46,"title":"파트별 팀장 에이전트 13개와 공통 규약","type":"작업","status":"완료","priority":"보통","milestone":"개발 환경","parts":["도구"],"start":"2026-11-13","end":"2026-11-13","commit":"e61c316dd","doc":"Documentation/Team-Roles-Research-2026-11-12.md","epic":6},
   {"key":47,"title":"아트 파트 에이전트 8개와 조사 자료","type":"작업","status":"완료","priority":"보통","milestone":"개발 환경","parts":["도구","아트"],"start":"2026-11-13","end":"2026-11-13","commit":"b37e3b62a","epic":6},
   {"key":48,"title":"Unity CLI를 실행 중인 에디터에 연결","type":"작업","status":"완료","priority":"낮음","milestone":"개발 환경","parts":["도구","빌드"],"start":"2026-11-13","end":"2026-11-13","commit":"커밋 전","memo":"Pipeline 패키지 설치, CLI beta.17로 업데이트, eval 왕복 확인","epic":6},
-  {"key":49,"title":"개발 기록 홈페이지(GitHub Pages) 만들기","type":"작업","status":"진행 중","priority":"보통","milestone":"개발 환경","parts":["기획","도구"],"start":"2026-11-13","memo":"유지비 0원 조건. GitHub Pages 정적 사이트로 홈 · 기획 요약 · 작업 트래커 · 개발 일지 구성","epic":6},
+  {"key":49,"title":"개발 기록 홈페이지(GitHub Pages) 만들기","type":"작업","status":"완료","priority":"보통","milestone":"개발 환경","parts":["기획","도구"],"start":"2026-11-13","end":"2026-11-13","commit":"a033a9e (사이트 저장소)","memo":"유지비 0원 조건. GitHub Pages 정적 사이트로 홈 · 기획 요약 · 작업 트래커 · 개발 일지 구성. 공개 주소 https://inhwan98.github.io","epic":6},
 
   {"key":50,"title":"긁기 시제품 씬: 은박 마스크 · 가루 · 소리","type":"스토리","status":"진행 중","priority":"최상","milestone":"S0 긁기 손맛","parts":["UI","아트","사운드"],"start":"2026-11-13","commit":"커밋 전","doc":"Assets/00.Scenes/Prototype/ScratchFeel.unity","epic":7},
   {"key":51,"title":"사람이 직접 긁어 보고 손맛 확인","type":"작업","status":"할 일","priority":"최상","milestone":"S0 긁기 손맛","parts":["QA"],"epic":7},
