@@ -1,7 +1,7 @@
 ---
 title: "Unity CLI 연결과 개발 기록 사이트"
 date: 2026-11-13 13:00:00 +0900
-categories: [개발 일지, 개발 환경]
+categories: [잿불 용병단, 개발 환경]
 tags: [도구]
 description: "명령줄에서 에디터를 제어하도록 연결하고 이 기록 사이트를 만듦"
 tasks: [6, 48, 49]

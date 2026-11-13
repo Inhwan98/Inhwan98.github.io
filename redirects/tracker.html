@@ -1,0 +1,20 @@
+---
+layout: null
+permalink: /tracker/
+sitemap: false
+---
+{%- assign target = '/projects/ember/tracker/' | relative_url -%}
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="robots" content="noindex">
+  <title>작업 트래커로 이동</title>
+  <!-- 옛 주소. 트래커는 잿불 용병단 프로젝트 아래로 옮겼다. 작업 번호(?t=) 등 주소 뒤 값을 그대로 넘긴다. -->
+  <script>location.replace('{{ target }}' + location.search + location.hash);</script>
+  <meta http-equiv="refresh" content="0; url={{ target }}">
+</head>
+<body>
+  <p><a href="{{ target }}">잿불 용병단 작업 트래커로 이동</a></p>
+</body>
+</html>

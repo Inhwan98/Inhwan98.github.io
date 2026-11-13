@@ -17,8 +17,7 @@ tabs:
   archives: 아카이브
   about: 소개
   # 이 사이트에서 추가한 탭 (파일 이름 기준)
-  tracker: 작업 트래커
-  design: 기획
+  projects: 프로젝트
 
 # the text displayed in the search bar & search results
 search:

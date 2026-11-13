@@ -1,7 +1,7 @@
 ---
 title: "프로젝트 시작과 첫 시제품 세 개"
 date: 2026-08-13 12:00:00 +0900
-categories: [개발 일지, 초기 탐색]
+categories: [잿불 용병단, 초기 탐색]
 tags: [구현]
 description: "Unity 6으로 옮기고 오피스 관찰형 · 방치형 · 푸드트럭 시제품을 만들어 봄"
 tasks: [1]

@@ -9,7 +9,7 @@
   {%- for k in page.tasks -%}
     {%- assign t = site.data.tasks | where: "key", k | first -%}
     {%- if t -%}
-    <li><a href="{{ '/tracker/' | relative_url }}?t={{ t.key }}">EMBER-{{ t.key }} · {{ t.title }}</a> ({{ t.status }})</li>
+    <li><a href="{{ '/projects/ember/tracker/' | relative_url }}?t={{ t.key }}">EMBER-{{ t.key }} · {{ t.title }}</a> ({{ t.status }})</li>
     {%- endif -%}
   {%- endfor -%}
   </ul>

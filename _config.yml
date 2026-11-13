@@ -6,11 +6,11 @@ theme: jekyll-theme-chirpy
 lang: ko-KR
 timezone: Asia/Seoul
 
-title: 잿불 용병단 개발 기록
-tagline: 혼자 만드는 긁는 복권 로그라이크의 작업 트래커와 개발 일지
+title: 박인환 개발 블로그
+tagline: Unity 클라이언트 프로그래머의 게임 개발 기록
 description: >-
-  개인 게임 프로젝트 「잿불 용병단(가칭)」의 개발 일지, 작업 트래커, 기획 요약.
-  Unity 6 · C# · PC Steam용 긁는 복권 로그라이크로 개편 중.
+  Unity 클라이언트 프로그래머 박인환의 블로그.
+  혼자 진행하는 게임 프로젝트의 개발 일지와 작업 기록을 적습니다.
 
 url: "https://inhwan98.github.io"
 

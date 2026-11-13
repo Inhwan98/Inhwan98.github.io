@@ -1,6 +1,7 @@
 ---
-icon: fas fa-compass-drafting
-order: 3
+layout: page
+title: 잿불 용병단 기획 요약
+permalink: /projects/ember/design/
 ---
 
 긁는 복권 로그라이크 · 2026-11-13 초안 기준 · PC Steam

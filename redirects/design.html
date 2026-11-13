@@ -1,0 +1,20 @@
+---
+layout: null
+permalink: /design/
+sitemap: false
+---
+{%- assign target = '/projects/ember/design/' | relative_url -%}
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="robots" content="noindex">
+  <title>기획 요약으로 이동</title>
+  <!-- 옛 주소. 기획 요약은 잿불 용병단 프로젝트 아래로 옮겼다. -->
+  <script>location.replace('{{ target }}' + location.hash);</script>
+  <meta http-equiv="refresh" content="0; url={{ target }}">
+</head>
+<body>
+  <p><a href="{{ target }}">잿불 용병단 기획 요약으로 이동</a></p>
+</body>
+</html>

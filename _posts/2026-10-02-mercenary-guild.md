@@ -1,7 +1,7 @@
 ---
 title: "용병단 경영으로 전환, Pixel Quest 아트 적용"
 date: 2026-10-02 12:00:00 +0900
-categories: [개발 일지, 용병단 모바일]
+categories: [잿불 용병단, 용병단 모바일]
 tags: [전환, 구현, 검증]
 description: "구매 에셋으로 용병단 거점과 돌봄 담당을 만들고 모바일 품질 기준을 정리"
 tasks: [3]

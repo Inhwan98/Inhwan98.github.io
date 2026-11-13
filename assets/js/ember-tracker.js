@@ -1,6 +1,6 @@
 /* 잿불 용병단 작업 트래커 (Chirpy 탭 안에서 동작).
    데이터 원본: _data/tasks.json (작업), _posts (개발 일지).
-   주소 형식: /tracker/?view=board|backlog|roadmap|epics&t=<작업 번호> */
+   주소 형식: /projects/ember/tracker/?view=board|backlog|roadmap|epics&t=<작업 번호> */
 (() => {
   'use strict';
 
