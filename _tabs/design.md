@@ -1,3 +1,12 @@
+---
+title: 기획
+icon: fas fa-compass-drafting
+order: 3
+---
+
+긁는 복권 로그라이크 · 2026-11-13 초안 기준 · PC Steam
+{: .text-muted }
+
 > 기준 문서는 게임 저장소의 `SCRATCH_GUILD_GDD.md`(2026-11-13, 초안)입니다. 이 페이지는 그 요약이며, 확정된 것과 제안을 구분해 적습니다.
 
 ## 한 줄 소개

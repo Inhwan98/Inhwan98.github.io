@@ -1,0 +1,211 @@
+/* 작업 트래커 스타일. Chirpy 의 색 변수(--main-bg 등)를 쓰고, 태그 색만 따로 정한다.
+   Chirpy 는 다크 모드를 html[data-mode="dark"] 또는 시스템 설정으로 바꾼다. */
+
+#ember-root {
+  --et-bg: var(--main-bg, #fff);
+  --et-text: var(--text-color, #34343c);
+  --et-muted: var(--text-muted-color, #757575);
+  --et-line: var(--main-border-color, #e9e9e7);
+  --et-accent: #2383e2;
+  --et-hover: rgba(55, 53, 47, 0.06);
+  --et-soft: rgba(55, 53, 47, 0.035);
+  --et-col: #f4f5f7;
+  --et-card: #fff;
+  --et-faint: #a5a29a;
+  --et-shadow: 0 1px 2px rgba(15, 15, 15, 0.08), 0 0 0 1px rgba(15, 15, 15, 0.06);
+  --t-gray: #e3e2e0;   --tt-gray: #32302c;
+  --t-brown: #eee0da;  --tt-brown: #442a1e;
+  --t-orange: #fadec9; --tt-orange: #49290e;
+  --t-yellow: #fdecc8; --tt-yellow: #402c1b;
+  --t-green: #dbeddb;  --tt-green: #1c3829;
+  --t-blue: #d3e5ef;   --tt-blue: #183347;
+  --t-purple: #e8deee; --tt-purple: #412454;
+  --t-pink: #f5e0e9;   --tt-pink: #4c2337;
+  --t-red: #ffe2dd;    --tt-red: #5d1715;
+  --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.95rem;
+  line-height: 1.55;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+
+@media (prefers-color-scheme: dark) {
+  html:not([data-mode="light"]) #ember-root {
+    --et-accent: #529cca; --et-hover: rgba(255,255,255,0.06); --et-soft: rgba(255,255,255,0.035);
+    --et-col: rgba(255,255,255,0.04); --et-card: #2a2a2e; --et-faint: #6f6e69;
+    --et-shadow: 0 0 0 1px rgba(255,255,255,0.08), 0 2px 4px rgba(0,0,0,0.3);
+    --t-gray: #373737; --tt-gray: #d4d4d4; --t-brown: #4a3329; --tt-brown: #e0cfc4;
+    --t-orange: #5c3b23; --tt-orange: #f0c8a8; --t-yellow: #564328; --tt-yellow: #f2dca6;
+    --t-green: #243d30; --tt-green: #b8dcc2; --t-blue: #143a4e; --tt-blue: #b4d6ea;
+    --t-purple: #3c2d49; --tt-purple: #d6c3e6; --t-pink: #4e2c3c; --tt-pink: #ecc4d6;
+    --t-red: #522e2a; --tt-red: #f4bfb8;
+  }
+}
+html[data-mode="dark"] #ember-root {
+  --et-accent: #529cca; --et-hover: rgba(255,255,255,0.06); --et-soft: rgba(255,255,255,0.035);
+  --et-col: rgba(255,255,255,0.04); --et-card: #2a2a2e; --et-faint: #6f6e69;
+  --et-shadow: 0 0 0 1px rgba(255,255,255,0.08), 0 2px 4px rgba(0,0,0,0.3);
+  --t-gray: #373737; --tt-gray: #d4d4d4; --t-brown: #4a3329; --tt-brown: #e0cfc4;
+  --t-orange: #5c3b23; --tt-orange: #f0c8a8; --t-yellow: #564328; --tt-yellow: #f2dca6;
+  --t-green: #243d30; --tt-green: #b8dcc2; --t-blue: #143a4e; --tt-blue: #b4d6ea;
+  --t-purple: #3c2d49; --tt-purple: #d6c3e6; --t-pink: #4e2c3c; --tt-pink: #ecc4d6;
+  --t-red: #522e2a; --tt-red: #f4bfb8;
+}
+
+/* Chirpy 본문 링크 스타일(밑줄 · 색)을 트래커 안에서는 끈다. */
+#ember-root a, #ember-root a:hover { color: inherit; border-bottom: 0; text-decoration: none; }
+#ember-root code { font-family: var(--mono); font-size: 0.86em; }
+#ember-root .et-muted { color: var(--et-muted); }
+#ember-root .et-sub { font-size: 0.85rem; margin: 6px 0 4px; }
+
+/* 숫자 요약 */
+#ember-root .et-stats { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; margin: 4px 0 8px; }
+#ember-root .et-stat { border: 1px solid var(--et-line); border-radius: 8px; padding: 10px 14px; }
+#ember-root .et-stat b { display: block; font-size: 1.5rem; line-height: 1.2; font-variant-numeric: tabular-nums; }
+#ember-root .et-stat span { font-size: 0.75rem; color: var(--et-muted); }
+
+/* 태그 · 아이콘 */
+#ember-root .et-tag { display: inline-flex; align-items: center; height: 20px; padding: 0 6px; border-radius: 3px; font-size: 12px; line-height: 20px; white-space: nowrap; background: var(--t-gray); color: var(--tt-gray); }
+#ember-root .et-tag.brown { background: var(--t-brown); color: var(--tt-brown); }
+#ember-root .et-tag.orange { background: var(--t-orange); color: var(--tt-orange); }
+#ember-root .et-tag.yellow { background: var(--t-yellow); color: var(--tt-yellow); }
+#ember-root .et-tag.green { background: var(--t-green); color: var(--tt-green); }
+#ember-root .et-tag.blue { background: var(--t-blue); color: var(--tt-blue); }
+#ember-root .et-tag.purple { background: var(--t-purple); color: var(--tt-purple); }
+#ember-root .et-tag.pink { background: var(--t-pink); color: var(--tt-pink); }
+#ember-root .et-tag.red { background: var(--t-red); color: var(--tt-red); }
+#ember-root .et-tags { display: inline-flex; flex-wrap: wrap; gap: 4px; }
+#ember-root .et-status { gap: 5px; padding: 0 8px 0 6px; border-radius: 10px; }
+#ember-root .et-status::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: currentColor; opacity: 0.7; }
+#ember-root .et-key { font-family: var(--mono); font-size: 12px; color: var(--et-muted); white-space: nowrap; }
+#ember-root .et-ticon { display: inline-grid; place-items: center; width: 16px; height: 16px; border-radius: 3px; color: #fff; font-size: 10px; font-weight: 700; flex: 0 0 16px; }
+#ember-root .et-ticon.epic { background: #904ee2; }
+#ember-root .et-ticon.story { background: #63ba3c; }
+#ember-root .et-ticon.task { background: #4bade8; }
+#ember-root .et-ticon.bug { background: #e5493a; }
+#ember-root .et-prio { font-size: 13px; font-weight: 700; width: 16px; text-align: center; flex: 0 0 16px; }
+#ember-root .et-prio.p0 { color: #cd1317; }
+#ember-root .et-prio.p1 { color: #e9494a; }
+#ember-root .et-prio.p2 { color: #e97f33; }
+#ember-root .et-prio.p3 { color: #2a8735; }
+
+/* 탭 · 필터 */
+#ember-root .et-tabs { display: flex; gap: 2px; border-bottom: 1px solid var(--et-line); margin: 8px 0 12px; overflow-x: auto; }
+#ember-root .et-tabs a { padding: 6px 10px; font-size: 0.9rem; color: var(--et-muted); border-bottom: 2px solid transparent; margin-bottom: -1px; white-space: nowrap; }
+#ember-root .et-tabs a:hover { color: var(--et-text); }
+#ember-root .et-tabs a.active { color: var(--et-text); border-bottom-color: var(--et-text); font-weight: 600; }
+#ember-root .et-filters { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; margin-bottom: 14px; }
+#ember-root .et-filters select, #ember-root .et-filters input {
+  font: inherit; font-size: 13px; color: var(--et-text); background: var(--et-bg); border: 1px solid var(--et-line);
+  border-radius: 6px; padding: 4px 8px; height: 30px;
+}
+#ember-root .et-filters input { width: 170px; }
+#ember-root .et-reset { font-size: 13px; background: none; border: 0; color: var(--et-muted); cursor: pointer; padding: 4px 6px; border-radius: 4px; }
+#ember-root .et-reset:hover { background: var(--et-hover); }
+#ember-root .et-count { margin-left: auto; font-size: 13px; color: var(--et-muted); }
+
+/* 보드 */
+#ember-root .et-board { display: grid; grid-template-columns: repeat(5, minmax(190px, 1fr)); gap: 10px; overflow-x: auto; padding-bottom: 12px; align-items: start; }
+#ember-root .et-col { background: var(--et-col); border-radius: 8px; padding: 8px; min-height: 120px; }
+#ember-root .et-col-head { display: flex; align-items: center; gap: 6px; font-size: 12px; font-weight: 600; color: var(--et-muted); padding: 2px 4px 8px; }
+#ember-root .et-col-head .n { color: var(--et-faint); font-weight: 500; }
+#ember-root .et-card { background: var(--et-card); border-radius: 6px; box-shadow: var(--et-shadow); padding: 10px 10px 8px; margin-bottom: 8px; display: block; }
+#ember-root .et-card:hover { filter: brightness(0.98); }
+#ember-root .et-card .ct { font-size: 0.875rem; line-height: 1.45; margin-bottom: 8px; }
+#ember-root .et-card .cepic { margin-bottom: 8px; }
+#ember-root .et-card .cf { display: flex; align-items: center; gap: 6px; }
+#ember-root .et-card .cf .et-key { margin-left: auto; }
+#ember-root .et-col-empty { font-size: 12px; color: var(--et-faint); padding: 8px 4px; }
+
+/* 목록 행 */
+#ember-root .et-rows { display: flex; flex-direction: column; }
+#ember-root .et-row { display: flex; align-items: center; gap: 8px; padding: 6px; border-bottom: 1px solid var(--et-line); min-width: 0; }
+#ember-root .et-row:hover { background: var(--et-hover); }
+#ember-root .et-row .rt { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+#ember-root .et-row .rm { display: flex; gap: 6px; align-items: center; flex: 0 0 auto; }
+
+/* 백로그 */
+#ember-root .et-sprint { border: 1px solid var(--et-line); border-radius: 8px; margin-bottom: 14px; overflow: hidden; }
+#ember-root .et-sprint-head { display: flex; align-items: center; gap: 10px; padding: 8px 12px; background: var(--et-soft); font-size: 0.875rem; cursor: pointer; user-select: none; flex-wrap: wrap; }
+#ember-root .et-sprint-head .sp-meta { color: var(--et-muted); font-size: 12px; }
+#ember-root .et-sprint-head .et-bar { margin-left: auto; width: 120px; }
+#ember-root .et-sprint.collapsed .et-rows { display: none; }
+#ember-root .et-sprint .et-row { padding: 7px 12px; }
+#ember-root .et-sprint .et-row:last-child { border-bottom: 0; }
+#ember-root .caret { display: inline-block; transition: transform 0.15s; font-size: 10px; color: var(--et-muted); }
+#ember-root .et-sprint.collapsed .caret { transform: rotate(-90deg); }
+
+#ember-root .et-bar { height: 6px; border-radius: 3px; background: var(--et-line); overflow: hidden; display: flex; }
+#ember-root .et-bar i { display: block; height: 100%; }
+#ember-root .et-bar .b-done { background: #4caf7a; }
+#ember-root .et-bar .b-doing { background: var(--et-accent); }
+#ember-root .et-bar .b-stop { background: var(--et-faint); }
+
+/* 로드맵 */
+#ember-root .et-roadmap { border: 1px solid var(--et-line); border-radius: 8px; overflow-x: auto; }
+#ember-root .rm-grid { display: grid; grid-template-columns: 220px 1fr; min-width: 760px; position: relative; }
+#ember-root .rm-cell { border-bottom: 1px solid var(--et-line); min-height: 40px; display: flex; align-items: center; }
+#ember-root .rm-name { padding: 6px 12px; gap: 8px; border-right: 1px solid var(--et-line); font-size: 0.85rem; min-width: 0; }
+#ember-root a.rm-name:hover { background: var(--et-hover); }
+#ember-root .rm-name .t { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+#ember-root .rm-track { position: relative; }
+#ember-root .rm-head { font-size: 12px; color: var(--et-muted); font-weight: 600; background: var(--et-soft); }
+#ember-root .rm-months, #ember-root .rm-lines { position: absolute; inset: 0; display: flex; }
+#ember-root .rm-months div { flex: 1; border-left: 1px solid var(--et-line); padding: 0 8px; display: flex; align-items: center; }
+#ember-root .rm-lines { pointer-events: none; }
+#ember-root .rm-lines div { flex: 1; border-left: 1px dashed var(--et-line); }
+#ember-root .rm-bar { position: absolute; height: 22px; top: 9px; border-radius: 5px; font-size: 11px; color: #fff; display: flex; align-items: center; padding: 0 8px; white-space: nowrap; overflow: hidden; min-width: 10px; }
+#ember-root .rm-bar.done { background: #4caf7a; color: #fff; }
+#ember-root .rm-bar.doing { background: var(--et-accent); color: #fff; }
+#ember-root .rm-bar.stop { background: var(--et-faint); color: #fff; }
+#ember-root .rm-bar.todo { background: transparent; border: 1.5px dashed var(--et-faint); color: var(--et-muted); }
+#ember-root .rm-today { position: absolute; top: 0; bottom: 0; width: 2px; background: #e9494a; z-index: 2; pointer-events: none; }
+#ember-root .rm-today::before { content: "오늘"; position: absolute; top: -1px; left: 4px; font-size: 10px; color: #e9494a; font-weight: 700; }
+#ember-root .et-note { font-size: 12px; color: var(--et-muted); margin-top: 8px; }
+
+/* 에픽 카드 */
+#ember-root .et-epics { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 12px; }
+#ember-root .et-epic { border: 1px solid var(--et-line); border-radius: 8px; padding: 14px; display: flex; flex-direction: column; gap: 8px; }
+#ember-root .et-epic:hover { background: var(--et-hover); }
+#ember-root .et-epic-title { font-weight: 650; display: flex; gap: 8px; align-items: flex-start; }
+#ember-root .et-epic-memo { font-size: 13px; color: var(--et-muted); flex: 1; }
+#ember-root .et-epic-foot { display: flex; align-items: center; gap: 8px; font-size: 12px; color: var(--et-muted); }
+#ember-root .et-epic-foot .et-bar { flex: 1; }
+
+/* 상세 창 */
+#ember-root .et-modal { position: fixed; inset: 0; z-index: 2000; display: flex; align-items: flex-start; justify-content: center; padding: 6vh 16px; }
+#ember-root .et-modal[hidden] { display: none; }
+#ember-root .et-modal-backdrop { position: absolute; inset: 0; background: rgba(15, 15, 15, 0.5); }
+#ember-root .et-modal-panel { position: relative; background: var(--et-bg); color: var(--et-text); width: min(760px, 100%); max-height: 88vh; overflow-y: auto; border-radius: 10px; box-shadow: 0 16px 48px rgba(0,0,0,0.3); padding: 28px 36px 32px; }
+#ember-root .et-modal-close { position: absolute; top: 10px; right: 10px; background: none; border: 0; cursor: pointer; font-size: 15px; color: var(--et-muted); padding: 6px 9px; border-radius: 6px; }
+#ember-root .et-modal-close:hover { background: var(--et-hover); }
+#ember-root .et-modal-key { display: flex; align-items: center; gap: 6px; }
+#ember-root .et-modal-title { font-size: 1.5rem; font-weight: 700; line-height: 1.3; margin: 6px 0 4px; color: var(--heading-color, inherit); }
+#ember-root .et-props { display: grid; grid-template-columns: 110px 1fr; gap: 2px 8px; margin: 12px 0 16px; font-size: 0.875rem; }
+#ember-root .et-props dt { color: var(--et-muted); padding: 5px 6px; font-weight: 400; }
+#ember-root .et-props dd { margin: 0; padding: 5px 6px; min-width: 0; display: flex; flex-wrap: wrap; gap: 4px; align-items: center; }
+#ember-root .et-props dd.empty { color: var(--et-faint); }
+#ember-root .et-link { text-decoration: underline; text-decoration-color: var(--et-faint); text-underline-offset: 3px; }
+#ember-root .et-callout { background: var(--et-soft); border-radius: 6px; padding: 12px 14px; margin: 10px 0; font-size: 0.9rem; }
+#ember-root .et-section { font-weight: 650; margin: 22px 0 6px; padding-bottom: 6px; border-bottom: 1px solid var(--et-line); display: flex; gap: 8px; align-items: baseline; }
+#ember-root .et-section .et-muted { font-weight: 400; font-size: 12px; }
+#ember-root .et-logs { display: flex; flex-direction: column; }
+#ember-root .et-log { display: grid; grid-template-columns: 90px 1fr; gap: 12px; padding: 10px 6px; border-bottom: 1px solid var(--et-line); }
+#ember-root .et-log:hover { background: var(--et-hover); }
+#ember-root .et-log-date { font-size: 12px; color: var(--et-muted); font-variant-numeric: tabular-nums; padding-top: 2px; }
+#ember-root .et-log-title { display: block; font-weight: 600; }
+#ember-root .et-log-sum { display: block; color: var(--et-muted); font-size: 13px; }
+
+@media (max-width: 768px) {
+  #ember-root .et-stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  #ember-root .et-board { grid-template-columns: repeat(5, 78vw); scroll-snap-type: x mandatory; }
+  #ember-root .et-col { scroll-snap-align: start; }
+  #ember-root .et-filters input { width: 100%; }
+  #ember-root .et-count { margin-left: 0; }
+  #ember-root .et-row .rm .et-tag:not(.keep) { display: none; }
+  #ember-root .et-sprint-head .et-bar { width: 60px; }
+  #ember-root .et-modal { padding: 0; }
+  #ember-root .et-modal-panel { max-height: 100vh; height: 100vh; border-radius: 0; padding: 44px 16px 32px; }
+  #ember-root .et-props { grid-template-columns: 90px 1fr; }
+  #ember-root .et-log { grid-template-columns: 1fr; gap: 2px; }
+}

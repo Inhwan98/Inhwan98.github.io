@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="잿불 용병단">
+  <defs>
+    <radialGradient id="glow" cx="50%" cy="70%" r="60%">
+      <stop offset="0%" stop-color="#5a2a12"/>
+      <stop offset="100%" stop-color="#1c1714"/>
+    </radialGradient>
+    <linearGradient id="flame" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#e2531f"/>
+      <stop offset="60%" stop-color="#f29a2e"/>
+      <stop offset="100%" stop-color="#ffd36b"/>
+    </linearGradient>
+  </defs>
+  <rect width="120" height="120" fill="url(#glow)"/>
+  <path d="M60 18c4 14 22 24 22 46 0 15-10 28-22 28S38 79 38 64c0-10 5-16 10-21 0 8 3 13 8 15-3-14 1-28 4-40z" fill="url(#flame)"/>
+  <path d="M60 58c2 7 10 11 10 21 0 7-4 12-10 12s-10-5-10-12c0-5 3-8 5-10 0 4 2 6 4 7-1-6 0-12 1-18z" fill="#fff1c7" opacity="0.85"/>
+  <rect x="30" y="96" width="60" height="6" rx="3" fill="#3a2a20"/>
+</svg>

@@ -1,0 +1,18 @@
+---
+title: 작업 트래커
+icon: fas fa-table-columns
+order: 2
+---
+<link rel="stylesheet" href="{{ '/assets/css/ember-tracker.css' | relative_url }}">
+<div id="ember-root" data-base="{{ '/' | relative_url }}">
+  <div id="ember-app"><p class="et-muted">작업 목록을 불러오는 중…</p></div>
+  <div id="ember-modal" class="et-modal" role="dialog" aria-modal="true" aria-labelledby="ember-modal-title" hidden>
+    <div class="et-modal-backdrop" data-close></div>
+    <div class="et-modal-panel">
+      <button class="et-modal-close" type="button" data-close aria-label="닫기">✕</button>
+      <div id="ember-modal-body"></div>
+    </div>
+  </div>
+  <noscript><p>작업 트래커는 JavaScript가 켜져 있어야 보입니다.</p></noscript>
+</div>
+<script src="{{ '/assets/js/ember-tracker.js' | relative_url }}" defer></script>

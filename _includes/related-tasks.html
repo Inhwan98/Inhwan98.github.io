@@ -1,0 +1,17 @@
+{%- comment -%}
+  글 아래 '관련 작업' 상자. 글 머리의 tasks: [번호, ...] 를 _data/tasks.json 에서 찾아 트래커 상세로 잇는다.
+  모양은 Chirpy 의 알림 상자(blockquote.prompt-tip)를 그대로 쓴다.
+{%- endcomment -%}
+{%- if page.tasks and page.tasks.size > 0 -%}
+<blockquote class="prompt-tip">
+  <p><strong>관련 작업</strong></p>
+  <ul>
+  {%- for k in page.tasks -%}
+    {%- assign t = site.data.tasks | where: "key", k | first -%}
+    {%- if t -%}
+    <li><a href="{{ '/tracker/' | relative_url }}?t={{ t.key }}">EMBER-{{ t.key }} · {{ t.title }}</a> ({{ t.status }})</li>
+    {%- endif -%}
+  {%- endfor -%}
+  </ul>
+</blockquote>
+{%- endif -%}

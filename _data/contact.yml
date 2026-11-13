@@ -1,0 +1,8 @@
+# 사이드바 아래 연락 아이콘. 공개 사이트라 이메일은 넣지 않는다.
+
+- type: github
+  icon: "fab fa-github"
+
+- type: rss
+  icon: "fas fa-rss"
+  noblank: true

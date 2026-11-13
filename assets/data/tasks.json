@@ -1,0 +1,5 @@
+---
+layout: null
+# 원본은 _data/tasks.json. 트래커 스크립트가 읽도록 그대로 내보낸다.
+---
+{{ site.data.tasks | jsonify }}

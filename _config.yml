@@ -1,0 +1,148 @@
+# 사이트 설정 (Chirpy 테마)
+# 바꾼 뒤 main 에 올리면 GitHub Actions 가 다시 빌드한다.
+
+theme: jekyll-theme-chirpy
+
+lang: ko-KR
+timezone: Asia/Seoul
+
+title: 잿불 용병단 개발 기록
+tagline: 혼자 만드는 긁는 복권 로그라이크의 작업 트래커와 개발 일지
+description: >-
+  개인 게임 프로젝트 「잿불 용병단(가칭)」의 개발 일지, 작업 트래커, 기획 요약.
+  Unity 6 · C# · PC Steam용 긁는 복권 로그라이크로 개편 중.
+
+url: "https://inhwan98.github.io"
+
+github:
+  username: Inhwan98
+
+twitter:
+  username:
+
+social:
+  name: 박인환
+  # 공개 사이트라 이메일은 비워 둔다.
+  email:
+  fediverse_handle:
+  links:
+    - https://github.com/Inhwan98
+
+webmaster_verifications:
+  google:
+  bing:
+
+analytics:
+  google:
+    id:
+  goatcounter:
+    id:
+
+pageviews:
+  provider:
+
+# 비워 두면 방문자의 시스템 설정을 따르고, 사이드바 아래에 전환 버튼이 생긴다.
+theme_mode:
+
+cdn:
+
+avatar: /assets/img/avatar.svg
+
+social_preview_image:
+
+toc: true
+
+actions:
+  edit_post:
+    enabled: false
+    url: ""
+    static_url: false
+
+# 댓글은 쓰지 않는다.
+comments:
+  provider:
+
+assets:
+  self_host:
+    enabled:
+    env:
+
+# 오프라인 캐시를 끄면 글을 고쳤을 때 방문자에게 바로 보인다.
+pwa:
+  enabled: false
+  cache:
+    enabled: false
+
+paginate: 10
+
+baseurl: ""
+
+# ------------ 아래는 테마 기본값. 바꾸지 않는다 ------------
+
+kramdown:
+  footnote_backlink: "&#8617;&#xfe0e;"
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: highlight
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+      start_line: 1
+
+collections:
+  tabs:
+    output: true
+    sort_by: order
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      comments: false
+      toc: true
+      permalink: /posts/:title/
+  - scope:
+      path: _drafts
+    values:
+      comments: false
+  - scope:
+      path: ""
+      type: tabs
+    values:
+      layout: page
+      permalink: /:title/
+
+sass:
+  style: compressed
+
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  profile: false
+  blanklines: false
+  ignore:
+    envs: [development]
+
+exclude:
+  - "*.gem"
+  - "*.gemspec"
+  - docs
+  - tools
+  - README.md
+  - LICENSE
+  - purgecss.js
+  - "*.config.js"
+  - "package*.json"
+
+jekyll-archives:
+  enabled: [categories, tags]
+  layouts:
+    category: category
+    tag: tag
+  permalinks:
+    tag: /tags/:name/
+    category: /categories/:name/

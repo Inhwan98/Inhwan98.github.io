@@ -1,21 +1,60 @@
 # 잿불 용병단 개발 기록
 
-개인 게임 프로젝트 「잿불 용병단」의 작업 트래커와 개발 일지 사이트입니다.
-GitHub Pages로 무료 호스팅하며, 빌드 도구 없이 정적 파일만으로 동작합니다.
+개인 게임 프로젝트 「잿불 용병단」의 개발 일지, 작업 트래커, 기획 요약을 담은 블로그입니다.
+주소: https://inhwan98.github.io
+
+- 테마: [Chirpy](https://github.com/cotes2020/jekyll-theme-chirpy) (MIT). 빌드 설정은 [chirpy-starter](https://github.com/cotes2020/chirpy-starter)에서 가져왔습니다.
+- 호스팅: GitHub Pages. `main`에 올리면 GitHub Actions(`.github/workflows/pages-deploy.yml`)가 빌드해 배포합니다. 공개 저장소라 비용이 없습니다.
+- 수정 권한: 이 저장소에 커밋할 수 있는 사람만 바꿀 수 있습니다. 방문자는 읽기만 합니다.
 
 ## 고치는 방법
 
 | 바꿀 것 | 파일 |
 | --- | --- |
-| 홈 소개 · 한눈에 표 · 걸어온 길 · 원칙 | `data/site.json` |
-| 작업 트래커 (보드 · 백로그 · 로드맵 · 에픽) | `data/tasks.json` |
-| 개발 일지 목록 | `data/devlog.json` |
-| 개발 일지 본문 | `content/devlog/<slug>.md` |
-| 기획 요약 | `content/design.md` |
+| 사이트 제목 · 소개 문구 · 테마 설정 | `_config.yml` |
+| 소개(정보) 탭 | `_tabs/about.md` |
+| 기획 요약 탭 | `_tabs/design.md` |
+| 작업 트래커 데이터 | `_data/tasks.json` |
+| 작업 트래커 화면 | `_tabs/tracker.html`, `assets/js/ember-tracker.js`, `assets/css/ember-tracker.css` |
+| 개발 일지 글 | `_posts/YYYY-MM-DD-영문-슬러그.md` |
 
-### 작업 추가
+### 일지 글 추가
 
-`data/tasks.json` 배열에 한 줄을 넣습니다. `key`는 겹치지 않는 번호, `epic`은 상위 에픽의 `key`입니다.
+`_posts/2026-11-20-scratch-s0.md` 처럼 만듭니다. 파일 이름의 날짜 뒤 부분이 주소(`/posts/scratch-s0/`)가 되므로 영문 소문자와 `-`만 씁니다.
+
+```markdown
+---
+title: "긁기 손맛 시제품 S0"
+date: 2026-11-20 18:00:00 +0900
+categories: [개발 일지, 긁는 복권]
+tags: [구현, 검증]
+description: "목록에 보이는 한 줄 요약"
+tasks: [53, 54]
+---
+
+## 한 일
+
+- ...
+
+## 확인한 것
+
+- 테스트 · 시뮬레이션 · 캡처 등 근거와 수치
+
+## 확인하지 못한 것
+
+- ...
+
+{% include related-tasks.html %}
+```
+
+- `categories`: 첫째는 `개발 일지`, 둘째는 단계(`초기 탐색`, `고블린 게임회사`, `용병단 모바일`, `룬 릴`, `긁는 복권`, `개발 환경` 등).
+- `tags`: `구현` · `기획` · `검증` · `조사` · `전환` · `도구` 중에서 고릅니다.
+- `tasks`: `_data/tasks.json`의 작업 번호. 글 아래 '관련 작업' 상자와 트래커 상세 창의 '관련 개발 일지'가 이 값으로 이어집니다.
+- 본문에 `{{`나 `{%`를 그대로 쓰면 Liquid 문법으로 읽힙니다. 코드에 꼭 필요하면 `{% raw %}` … `{% endraw %}`로 감쌉니다.
+
+### 작업 추가 · 상태 변경
+
+`_data/tasks.json` 배열을 고칩니다. `key`는 겹치지 않는 번호, `epic`은 상위 에픽의 `key`입니다.
 
 ```json
 {"key":68,"title":"새 작업","type":"작업","status":"할 일","priority":"보통","milestone":"S2 전투 한 판","parts":["전투"],"epic":9}
@@ -25,21 +64,18 @@ GitHub Pages로 무료 호스팅하며, 빌드 도구 없이 정적 파일만으
 - `status`: 할 일 · 진행 중 · 검토 · 완료 · 중단
 - `priority`: 최상 · 높음 · 보통 · 낮음
 - 선택 항목: `start`, `end`(YYYY-MM-DD), `commit`, `doc`, `memo`
-- 새 마일스톤을 쓰려면 `app.js`의 `MILESTONES` 배열에도 추가합니다.
+- 새 마일스톤을 쓰려면 `assets/js/ember-tracker.js`의 `MILESTONES` 배열에도 추가합니다.
 
-### 일지 추가
+## 다른 작업 세션에서 갱신하는 절차
 
-1. `content/devlog/2026-11-20-제목.md`에 본문을 Markdown으로 씁니다. (`##` 제목, `-` 목록, 표, 코드 블록, `**굵게**` 지원)
-2. `data/devlog.json` 맨 앞에 `{"slug":"2026-11-20-제목","date":"2026-11-20","title":"…","summary":"…","tags":["구현"],"tasks":[53]}`를 넣습니다.
+게임 저장소에서 기능 · 기획 · 검증 작업을 마친 세션은 이 순서로 갱신합니다.
 
-## 로컬에서 보기
+1. `_data/tasks.json`: 끝낸 작업은 `status`를 `완료`로, `end` · `commit`(게임 저장소 커밋 앞 7자리) · `doc`(근거 문서 이름)을 채웁니다. 새로 생긴 작업은 행을 추가합니다.
+2. 의미 있는 진척(기능 완성, 기획 결정, 검증 결과, 방향 전환)이면 `_posts/`에 일지 글을 하나 씁니다. 사소한 수정은 작업 상태만 바꿉니다.
+3. 근거가 있는 수치만 씁니다. 시뮬레이션 · 자동 검사는 사람 플레이 검증과 구분해 적습니다.
+4. 비공개 게임 저장소의 코드, 구매 에셋 원본, 개인 이메일, 이전 소속 자료는 넣지 않습니다.
+5. 커밋과 `main` push는 사용자가 요청할 때만 합니다. 커밋 작성자 이메일은 이 저장소 설정의 GitHub noreply 주소를 씁니다.
 
-```bash
-python -m http.server 8000
-```
+## 로컬에서 보기 (선택)
 
-브라우저에서 `http://localhost:8000`을 엽니다. (`index.html`을 파일로 직접 열면 데이터 파일을 읽지 못합니다.)
-
-## 수정 권한
-
-이 저장소에 커밋할 수 있는 사람만 내용을 바꿀 수 있습니다. 방문자는 읽기만 합니다.
+Ruby와 Bundler가 있으면 `bundle install` 후 `bundle exec jekyll s`로 `http://127.0.0.1:4000`에서 볼 수 있습니다. 없으면 push 후 Actions 빌드 결과로 확인합니다.

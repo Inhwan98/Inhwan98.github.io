@@ -1,0 +1,10 @@
+---
+layout: null
+# 개발 일지 글 목록. 트래커의 작업 상세 창이 '관련 개발 일지'를 보여 줄 때 쓴다.
+---
+[
+{%- for p in site.posts -%}
+  {%- unless forloop.first -%},{%- endunless -%}
+  {"url": {{ p.url | relative_url | jsonify }}, "date": {{ p.date | date: "%Y-%m-%d" | jsonify }}, "title": {{ p.title | jsonify }}, "summary": {{ p.description | jsonify }}, "tags": {{ p.tags | jsonify }}, "tasks": {% if p.tasks %}{{ p.tasks | jsonify }}{% else %}[]{% endif %}}
+{%- endfor -%}
+]
