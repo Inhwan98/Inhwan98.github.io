@@ -1,6 +1,4 @@
 ---
-# 사이드바에는 테마 번역에 따라 '정보'로 표시된다.
-title: 소개
 icon: fas fa-info-circle
 order: 1
 ---

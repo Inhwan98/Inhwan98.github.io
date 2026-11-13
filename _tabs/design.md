@@ -1,5 +1,4 @@
 ---
-title: 기획
 icon: fas fa-compass-drafting
 order: 3
 ---
