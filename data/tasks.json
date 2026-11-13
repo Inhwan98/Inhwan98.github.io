@@ -1,0 +1,81 @@
+[
+  {"key":1,"title":"초기 프로토타입 탐색","type":"에픽","status":"완료","priority":"보통","milestone":"초기 탐색","parts":["기획","콘텐츠"],"start":"2026-08-13","end":"2026-08-15","memo":"오피스 관찰형 · 방치형 · 푸드트럭 시제품으로 어떤 루프가 재미있는지 작게 확인"},
+  {"key":2,"title":"고블린 게임회사 경영","type":"에픽","status":"완료","priority":"보통","milestone":"게임회사 경영","parts":["기획","콘텐츠","아트"],"start":"2026-08-20","end":"2026-09-29","memo":"미니게임 26종. 출시 준비 검토 후 용병단 경영으로 전환","doc":"GAME_COMPANY_SIMULATION_GDD.md, Documentation/ReleaseReadiness-2026-09-29.md"},
+  {"key":3,"title":"용병단 모바일 경영","type":"에픽","status":"완료","priority":"높음","milestone":"용병단 모바일","parts":["기획","콘텐츠","UI","아트","QA"],"start":"2026-10-02","end":"2026-10-18","memo":"편성 판정 · 자동 파견과 오프라인 정산 · 거점 돌봄 · 의뢰 현장 26종","doc":"MERCENARY_GUILD_GDD.md, Documentation/MercenaryGuild-QualityGate-2026-10-02.md"},
+  {"key":4,"title":"룬 릴 전투 M0: 규칙과 시뮬레이션","type":"에픽","status":"완료","priority":"높음","milestone":"룬 릴 M0","parts":["전투","데이터","기획"],"start":"2026-11-12","end":"2026-11-13","memo":"PC Steam 슬롯 릴 전투. 화면 없이 순수 C# 규칙으로 1,000판 시뮬레이션과 ML 에이전트 학습","doc":"RUNE_REEL_GUILD_GDD.md, Documentation/RuneReel-M0-Simulation-2026-11-12.md"},
+  {"key":5,"title":"룬 릴 전투 M1: 가로 전투 화면","type":"에픽","status":"중단","priority":"높음","milestone":"룬 릴 M1","parts":["UI","전투"],"start":"2026-11-13","end":"2026-11-13","memo":"1차 화면 구현 후, 사람 플레이 검증 전에 긁는 복권 기획으로 전환. 코드는 보관","doc":"Documentation/RuneReel-M1-BattleScreen-2026-11-12.md"},
+  {"key":6,"title":"개발 환경과 도구","type":"에픽","status":"진행 중","priority":"보통","milestone":"개발 환경","parts":["도구","QA"],"start":"2026-08-13","memo":"공용 유틸리티, 테스트 규칙, AI 협업 규칙과 역할별 에이전트"},
+  {"key":7,"title":"S0 긁기 손맛 시제품","type":"에픽","status":"진행 중","priority":"최상","milestone":"S0 긁기 손맛","parts":["UI","아트","사운드"],"start":"2026-11-13","memo":"완료 기준: 은박 마스크 · 가루 · 소리 · 칸 자동 공개, 60fps, 사람이 \"긁는 게 기분 좋다\"고 느끼는지","doc":"SCRATCH_GUILD_GDD.md §13"},
+  {"key":8,"title":"S1 전투 규칙 시뮬레이션","type":"에픽","status":"진행 중","priority":"최상","milestone":"S1 전투 시뮬레이션","parts":["전투","데이터"],"start":"2026-11-13","memo":"완료 기준: 순수 C# 전투 복권 · 판정 · 적 패턴, 1,000판 시뮬레이션으로 턴 수와 운 대 판단 비율 확인","doc":"SCRATCH_GUILD_GDD.md §13"},
+  {"key":9,"title":"S2 전투 한 판","type":"에픽","status":"할 일","priority":"높음","milestone":"S2 전투 한 판","parts":["전투","UI","QA"],"memo":"완료 기준: S0 손맛 + S1 규칙, 사람이 5판 해 보고 \"한 판 더\" 반응"},
+  {"key":10,"title":"S3 런 하나","type":"에픽","status":"할 일","priority":"보통","milestone":"S3 런 하나","parts":["콘텐츠","기획","UI"],"memo":"지도, 보상 복권, 복권방, 부적 10개, 보스 1"},
+  {"key":11,"title":"S4 거점과 메타 진행","type":"에픽","status":"할 일","priority":"보통","milestone":"S4 거점과 메타","parts":["콘텐츠","기획"],"memo":"해금, 용병 명단, 난이도 단계"},
+  {"key":12,"title":"S5 Steam 데모","type":"에픽","status":"할 일","priority":"보통","milestone":"S5 Steam 데모","parts":["빌드","UI","QA"],"memo":"옵션 · 저장 · Steamworks 연동"},
+
+  {"key":13,"title":"Unity 6 프로젝트 이전","type":"작업","status":"완료","priority":"보통","milestone":"초기 탐색","parts":["빌드"],"start":"2026-08-13","end":"2026-08-13","commit":"55582ee4f","epic":1},
+  {"key":14,"title":"관찰형 오피스 루프 시제품","type":"스토리","status":"완료","priority":"보통","milestone":"초기 탐색","parts":["기획","콘텐츠"],"start":"2026-08-13","end":"2026-08-13","commit":"51df9cb26","epic":1},
+  {"key":15,"title":"원바이트 아이들 캠페인 시제품","type":"스토리","status":"완료","priority":"보통","milestone":"초기 탐색","parts":["기획","콘텐츠"],"start":"2026-08-14","end":"2026-08-14","commit":"738bfc176","doc":"ONE_BITE_IDLE_GDD.md","epic":1},
+  {"key":16,"title":"푸드트럭 탑뷰와 좁은 조리 동선","type":"스토리","status":"완료","priority":"보통","milestone":"초기 탐색","parts":["콘텐츠"],"start":"2026-08-14","end":"2026-08-14","commit":"613a36853","epic":1},
+
+  {"key":17,"title":"게임회사 메인 전환과 시상식","type":"스토리","status":"완료","priority":"높음","milestone":"게임회사 경영","parts":["기획","콘텐츠"],"start":"2026-08-20","end":"2026-08-20","commit":"ea1e867d7","epic":2},
+  {"key":18,"title":"픽셀 비주얼과 직원 이벤트","type":"스토리","status":"완료","priority":"보통","milestone":"게임회사 경영","parts":["아트","콘텐츠"],"start":"2026-09-12","end":"2026-09-12","commit":"005c00103","epic":2},
+  {"key":19,"title":"플레이 가능한 게임 확장과 툰 비주얼","type":"스토리","status":"완료","priority":"보통","milestone":"게임회사 경영","parts":["콘텐츠","아트"],"start":"2026-09-18","end":"2026-09-18","commit":"bc5000504","doc":"Documentation/PlayableGamesAndGoblinWorld.md","epic":2},
+  {"key":20,"title":"출시 준비 검토와 방향 재검토","type":"작업","status":"완료","priority":"높음","milestone":"게임회사 경영","parts":["기획"],"start":"2026-09-29","end":"2026-09-29","doc":"Documentation/ReleaseReadiness-2026-09-29.md","memo":"미니게임 수만으로는 오래 성장하는 재미를 보장할 수 없다는 판단 → 용병단 전환","epic":2},
+
+  {"key":21,"title":"Pixel Quest 아트로 용병단 구축과 돌봄 담당","type":"스토리","status":"완료","priority":"높음","milestone":"용병단 모바일","parts":["콘텐츠","아트"],"start":"2026-10-02","end":"2026-10-02","commit":"2d34c17b9","doc":"Documentation/PixelQuest-Visual-Update-2026-10-01.md","epic":3},
+  {"key":22,"title":"캐릭터 애니메이션 개체별 위상 오프셋","type":"작업","status":"완료","priority":"낮음","milestone":"용병단 모바일","parts":["아트"],"start":"2026-10-02","end":"2026-10-02","commit":"2ffc41561","epic":3},
+  {"key":23,"title":"커밋되지 않은 클래스 참조로 컴파일 실패","type":"버그","status":"완료","priority":"높음","milestone":"용병단 모바일","parts":["콘텐츠"],"start":"2026-10-02","end":"2026-10-02","commit":"7d0874468","epic":3},
+  {"key":24,"title":"모바일 품질 기준과 개선 우선순위 정리","type":"작업","status":"완료","priority":"높음","milestone":"용병단 모바일","parts":["QA","기획"],"start":"2026-10-02","end":"2026-10-02","doc":"Documentation/MercenaryGuild-QualityGate-2026-10-02.md","epic":3},
+  {"key":25,"title":"의뢰 · 오디오 · 모바일 연출 다듬기","type":"스토리","status":"완료","priority":"보통","milestone":"용병단 모바일","parts":["콘텐츠","사운드","UI"],"start":"2026-10-03","end":"2026-10-03","commit":"284343eb4","epic":3},
+  {"key":26,"title":"타이틀 씬: 브라운 톤 중세 마을 전경","type":"스토리","status":"완료","priority":"보통","milestone":"용병단 모바일","parts":["아트","UI"],"start":"2026-10-03","end":"2026-10-03","commit":"81d6eaac5","epic":3},
+  {"key":27,"title":"타이틀 원경 건물이 지면과 어긋남","type":"버그","status":"완료","priority":"낮음","milestone":"용병단 모바일","parts":["아트"],"start":"2026-10-03","end":"2026-10-03","commit":"0879607bf, c298388dd, 9c210a277","memo":"마을을 모으고 도로 폭 축소 → 건물 발밑을 지면 윗선에 맞춤 → 지면 안쪽으로 내려 앉힘 (3회 수정)","epic":3},
+  {"key":28,"title":"금화 · 명성 · 경험치 아이콘을 알아보기 쉽게 교체","type":"작업","status":"완료","priority":"보통","milestone":"용병단 모바일","parts":["UI"],"start":"2026-10-03","end":"2026-10-03","commit":"84308f7d7, 97798a21a","epic":3},
+  {"key":29,"title":"자동 전투와 편성 시스템 개선","type":"스토리","status":"완료","priority":"높음","milestone":"용병단 모바일","parts":["전투","콘텐츠"],"start":"2026-10-03","end":"2026-10-03","commit":"4f43d722a","epic":3},
+  {"key":30,"title":"편성 화면 재배치: 용병 목록 영역 두 배 이상","type":"작업","status":"완료","priority":"보통","milestone":"용병단 모바일","parts":["UI"],"start":"2026-10-03","end":"2026-10-03","commit":"b8eb23313","epic":3},
+  {"key":31,"title":"전투 연출과 모바일 알림 · 뒤로 가기 메뉴","type":"스토리","status":"완료","priority":"보통","milestone":"용병단 모바일","parts":["UI","전투"],"start":"2026-10-03","end":"2026-10-03","commit":"e34f55cd7","epic":3},
+  {"key":32,"title":"README를 프로젝트 소개 문서로 재작성","type":"작업","status":"완료","priority":"낮음","milestone":"용병단 모바일","parts":["기획"],"start":"2026-10-18","end":"2026-10-18","commit":"120a2777c","epic":3},
+
+  {"key":33,"title":"M0 규칙 구현과 1,000판 시뮬레이션","type":"스토리","status":"완료","priority":"최상","milestone":"룬 릴 M0","parts":["전투","데이터"],"start":"2026-11-12","end":"2026-11-12","commit":"b556f07e3","doc":"Documentation/RuneReel-M0-Simulation-2026-11-12.md","epic":4},
+  {"key":34,"title":"ML-Agents 플레이 에이전트 학습 환경","type":"스토리","status":"완료","priority":"높음","milestone":"룬 릴 M0","parts":["데이터","전투"],"start":"2026-11-12","end":"2026-11-12","commit":"51429c298","doc":"Documentation/RuneReel-MLAgents-Setup-2026-11-12.md","memo":"플레이어가 보는 정보만 보고 PPO로 학습하는 숙련 기준선","epic":4},
+  {"key":35,"title":"합동을 2개부터 판정해 퍼즐 목표 넓히기","type":"스토리","status":"완료","priority":"높음","milestone":"룬 릴 M0","parts":["전투","기획"],"start":"2026-11-12","end":"2026-11-12","commit":"78ff16887","doc":"Documentation/RuneReel-PuzzleGoals-2026-11-12.md","epic":4},
+  {"key":36,"title":"학습 환경 집계에서 2개 합동 횟수가 빠짐","type":"버그","status":"완료","priority":"높음","milestone":"룬 릴 M0","parts":["데이터"],"start":"2026-11-12","end":"2026-11-12","commit":"956640d0b","epic":4},
+  {"key":37,"title":"ML 에이전트 학습 모델과 시나리오별 평가","type":"작업","status":"완료","priority":"보통","milestone":"룬 릴 M0","parts":["데이터"],"start":"2026-11-12","end":"2026-11-12","commit":"e68e2c3ef","doc":"Documentation/RuneReel-MLAgent-Eval.md","epic":4},
+  {"key":38,"title":"플레이어 관점 리뷰 1 · 2회차","type":"작업","status":"완료","priority":"보통","milestone":"룬 릴 M0","parts":["기획","QA"],"start":"2026-11-12","end":"2026-11-12","commit":"d48ad1638, 69d69a3fe","doc":"Documentation/PlayerReviews/","memo":"Steam 리뷰 데이터 근거로 플레이어 시점에서 검토. 사람 플레이 검증이 아님","epic":4},
+  {"key":39,"title":"정확한 멈춤 보너스와 적 체력 · 갑각 재조정","type":"스토리","status":"완료","priority":"높음","milestone":"룬 릴 M0","parts":["전투","데이터"],"start":"2026-11-13","end":"2026-11-13","commit":"e642834cf","doc":"Documentation/RuneReel-PerfectStop-2026-11-12.md","epic":4},
+
+  {"key":40,"title":"가로 전투 화면과 샌드박스 씬","type":"스토리","status":"완료","priority":"높음","milestone":"룬 릴 M1","parts":["UI","전투"],"start":"2026-11-13","end":"2026-11-13","commit":"47a6e65d5","doc":"Documentation/RuneReel-M1-BattleScreen-2026-11-12.md","epic":5},
+  {"key":41,"title":"플레이어 관점 리뷰 3회차","type":"작업","status":"완료","priority":"보통","milestone":"룬 릴 M1","parts":["기획","QA"],"start":"2026-11-13","end":"2026-11-13","commit":"8251e0bd8","epic":5},
+  {"key":42,"title":"사람 플레이 5판 검증","type":"작업","status":"중단","priority":"높음","milestone":"룬 릴 M1","parts":["QA"],"memo":"긁는 복권 기획으로 전환해 진행하지 않음","epic":5},
+
+  {"key":43,"title":"저장되는 enum 값 고정과 잠금 테스트","type":"작업","status":"완료","priority":"높음","milestone":"개발 환경","parts":["도구","QA"],"start":"2026-11-12","end":"2026-11-12","commit":"25c2a93a3","memo":"저장 데이터가 enum 순서 변경으로 깨지지 않도록 테스트로 강제","epic":6},
+  {"key":44,"title":"UniTask · DOTween 공용 유틸리티","type":"작업","status":"완료","priority":"보통","milestone":"개발 환경","parts":["도구","UI"],"start":"2026-11-12","end":"2026-11-12","commit":"447efae3c, 7acac2d8c","epic":6},
+  {"key":45,"title":"세션 색인 문서와 플레이어 관점 리뷰 스킬","type":"작업","status":"완료","priority":"보통","milestone":"개발 환경","parts":["도구"],"start":"2026-11-12","end":"2026-11-12","commit":"95ed149b2","epic":6},
+  {"key":46,"title":"파트별 팀장 에이전트 13개와 공통 규약","type":"작업","status":"완료","priority":"보통","milestone":"개발 환경","parts":["도구"],"start":"2026-11-13","end":"2026-11-13","commit":"e61c316dd","doc":"Documentation/Team-Roles-Research-2026-11-12.md","epic":6},
+  {"key":47,"title":"아트 파트 에이전트 8개와 조사 자료","type":"작업","status":"완료","priority":"보통","milestone":"개발 환경","parts":["도구","아트"],"start":"2026-11-13","end":"2026-11-13","commit":"b37e3b62a","epic":6},
+  {"key":48,"title":"Unity CLI를 실행 중인 에디터에 연결","type":"작업","status":"완료","priority":"낮음","milestone":"개발 환경","parts":["도구","빌드"],"start":"2026-11-13","end":"2026-11-13","commit":"커밋 전","memo":"Pipeline 패키지 설치, CLI beta.17로 업데이트, eval 왕복 확인","epic":6},
+  {"key":49,"title":"개발 기록 홈페이지(GitHub Pages) 만들기","type":"작업","status":"진행 중","priority":"보통","milestone":"개발 환경","parts":["기획","도구"],"start":"2026-11-13","memo":"유지비 0원 조건. GitHub Pages 정적 사이트로 홈 · 기획 요약 · 작업 트래커 · 개발 일지 구성","epic":6},
+
+  {"key":50,"title":"긁기 시제품 씬: 은박 마스크 · 가루 · 소리","type":"스토리","status":"진행 중","priority":"최상","milestone":"S0 긁기 손맛","parts":["UI","아트","사운드"],"start":"2026-11-13","commit":"커밋 전","doc":"Assets/00.Scenes/Prototype/ScratchFeel.unity","epic":7},
+  {"key":51,"title":"사람이 직접 긁어 보고 손맛 확인","type":"작업","status":"할 일","priority":"최상","milestone":"S0 긁기 손맛","parts":["QA"],"epic":7},
+  {"key":52,"title":"긁기 화면 60fps 확인","type":"작업","status":"할 일","priority":"높음","milestone":"S0 긁기 손맛","parts":["QA","아트"],"epic":7},
+
+  {"key":53,"title":"전투 복권 · 판정 규칙을 순수 C#으로 구현","type":"스토리","status":"진행 중","priority":"최상","milestone":"S1 전투 시뮬레이션","parts":["전투"],"start":"2026-11-13","commit":"커밋 전","memo":"ScratchTicket · ScratchLaneBattle, EditMode 테스트 7개","epic":8},
+  {"key":54,"title":"시뮬레이션 플레이어: 무작위형과 판단형","type":"작업","status":"진행 중","priority":"높음","milestone":"S1 전투 시뮬레이션","parts":["데이터","전투"],"start":"2026-11-13","commit":"커밋 전","memo":"무작위형은 운만으로 내는 바닥선, 판단형은 은박 아래를 보지 않고 사람처럼 판단","epic":8},
+  {"key":55,"title":"1,000판 시뮬레이션으로 동전 내구도와 칸 수 정하기","type":"작업","status":"할 일","priority":"높음","milestone":"S1 전투 시뮬레이션","parts":["데이터","기획"],"epic":8},
+
+  {"key":56,"title":"손맛 시제품과 전투 규칙 합치기","type":"스토리","status":"할 일","priority":"높음","milestone":"S2 전투 한 판","parts":["UI","전투"],"epic":9},
+  {"key":57,"title":"사람 플레이 5판 검증","type":"작업","status":"할 일","priority":"높음","milestone":"S2 전투 한 판","parts":["QA"],"epic":9},
+
+  {"key":58,"title":"지도와 노드 선택","type":"스토리","status":"할 일","priority":"보통","milestone":"S3 런 하나","parts":["콘텐츠","UI"],"epic":10},
+  {"key":59,"title":"보상 복권 6종","type":"스토리","status":"할 일","priority":"보통","milestone":"S3 런 하나","parts":["콘텐츠","기획"],"memo":"용병 · 금화 · 행운 · 인쇄 · 동전 · 저주","epic":10},
+  {"key":60,"title":"복권방(상점)","type":"스토리","status":"할 일","priority":"보통","milestone":"S3 런 하나","parts":["콘텐츠","UI"],"memo":"복권 구매 · 제거 · 인쇄 강화, 동전 강화, 등위별 확률 표시","epic":10},
+  {"key":61,"title":"부적 10개","type":"스토리","status":"할 일","priority":"보통","milestone":"S3 런 하나","parts":["콘텐츠","기획"],"epic":10},
+  {"key":62,"title":"층 보스 1종","type":"스토리","status":"할 일","priority":"보통","milestone":"S3 런 하나","parts":["전투","콘텐츠"],"epic":10},
+
+  {"key":63,"title":"해금과 용병 명단","type":"스토리","status":"할 일","priority":"보통","milestone":"S4 거점과 메타","parts":["콘텐츠"],"epic":11},
+  {"key":64,"title":"난이도 단계: 등급마다 규칙 하나씩 추가","type":"스토리","status":"할 일","priority":"보통","milestone":"S4 거점과 메타","parts":["기획","전투"],"epic":11},
+
+  {"key":65,"title":"편의 옵션: 자동 긁기 · 손목 보호 · 연출 배속","type":"스토리","status":"할 일","priority":"높음","milestone":"S5 Steam 데모","parts":["UI"],"epic":12},
+  {"key":66,"title":"런 중간 저장","type":"스토리","status":"할 일","priority":"높음","milestone":"S5 Steam 데모","parts":["콘텐츠"],"epic":12},
+  {"key":67,"title":"Steamworks 연동과 데모 빌드","type":"작업","status":"할 일","priority":"보통","milestone":"S5 Steam 데모","parts":["빌드"],"epic":12}
+]
