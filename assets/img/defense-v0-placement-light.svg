@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 500" width="760" height="500" role="img" aria-label="배치별 승률: 배치는 승률을 크게 바꾸지만 정찰 배치가 가장 좋은 고정 배치를 이기는 것은 일부다" font-family="&#x27;Malgun Gothic&#x27;,&#x27;Apple SD Gothic Neo&#x27;,&#x27;Noto Sans KR&#x27;,system-ui,sans-serif">
+<title>배치별 승률: 배치는 승률을 크게 바꾸지만 정찰 배치가 가장 좋은 고정 배치를 이기는 것은 일부다</title>
+<rect x="0" y="0" width="760" height="500" rx="8" fill="#fcfcfb"/>
+<text x="20.0" y="30.0" font-size="16" font-weight="700" fill="#0b0b0b" text-anchor="start">배치는 크게 갈리지만, 정찰의 몫은 작다</text>
+<text x="20.0" y="52.0" font-size="12" font-weight="400" fill="#52514e" text-anchor="start">판단형이 약 80% 이기는 웨이브. 가능한 배치를 모두 같은 1,000판에 돌림. 스킬·도구는 모두 판단형 규칙</text>
+<circle cx="26.0" cy="78.0" r="5" fill="#1baf7a" stroke="#fcfcfb" stroke-width="2"/>
+<text x="38.0" y="82.0" font-size="12" font-weight="400" fill="#0b0b0b" text-anchor="start">무작위 배치 (가능한 배치 모두의 평균)</text>
+<rect x="21.0" y="93.0" width="10" height="10" rx="1.5" fill="#e34948" stroke="#fcfcfb" stroke-width="2"/>
+<text x="38.0" y="102.0" font-size="12" font-weight="400" fill="#0b0b0b" text-anchor="start">가장 좋은 고정 배치 (앞 500판으로 고르고 뒤 500판으로 잼)</text>
+<circle cx="26.0" cy="118.0" r="5" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+<text x="38.0" y="122.0" font-size="12" font-weight="400" fill="#0b0b0b" text-anchor="start">정찰 배치 (판단형, 뒤 500판)</text>
+<text x="668.0" y="146.0" font-size="11" font-weight="400" fill="#898781" text-anchor="start">정찰 − 고정</text>
+<line x1="200.0" y1="152.0" x2="200.0" y2="454.0" stroke="#e1e0d9" stroke-width="1" stroke-linecap="round"/>
+<text x="200.0" y="470.0" font-size="11" font-weight="400" fill="#898781" text-anchor="middle">0%</text>
+<line x1="310.0" y1="152.0" x2="310.0" y2="454.0" stroke="#e1e0d9" stroke-width="1" stroke-linecap="round"/>
+<text x="310.0" y="470.0" font-size="11" font-weight="400" fill="#898781" text-anchor="middle">25%</text>
+<line x1="420.0" y1="152.0" x2="420.0" y2="454.0" stroke="#e1e0d9" stroke-width="1" stroke-linecap="round"/>
+<text x="420.0" y="470.0" font-size="11" font-weight="400" fill="#898781" text-anchor="middle">50%</text>
+<line x1="530.0" y1="152.0" x2="530.0" y2="454.0" stroke="#e1e0d9" stroke-width="1" stroke-linecap="round"/>
+<text x="530.0" y="470.0" font-size="11" font-weight="400" fill="#898781" text-anchor="middle">75%</text>
+<line x1="640.0" y1="152.0" x2="640.0" y2="454.0" stroke="#e1e0d9" stroke-width="1" stroke-linecap="round"/>
+<text x="640.0" y="470.0" font-size="11" font-weight="400" fill="#898781" text-anchor="middle">100%</text>
+<text x="20.0" y="174.0" font-size="12" font-weight="700" fill="#0b0b0b" text-anchor="start">혼성 습격</text>
+<text x="108.0" y="174.0" font-size="12" font-weight="400" fill="#52514e" text-anchor="start">전체 체력</text>
+<line x1="382.2" y1="170.0" x2="537.9" y2="170.0" stroke="#c3c2b7" stroke-width="2" stroke-linecap="round"/>
+<circle cx="382.2" cy="170.0" r="5" fill="#1baf7a" stroke="#fcfcfb" stroke-width="2"/>
+<rect x="488.9" y="165.0" width="10" height="10" rx="1.5" fill="#e34948" stroke="#fcfcfb" stroke-width="2"/>
+<circle cx="537.9" cy="170.0" r="5" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+<text x="668.0" y="174.0" font-size="12" font-weight="700" fill="#0b0b0b" text-anchor="start">+10.0%p</text>
+<text x="382.2" y="159.0" font-size="11" font-weight="400" fill="#52514e" text-anchor="middle">무작위</text>
+<text x="489.9" y="159.0" font-size="11" font-weight="400" fill="#52514e" text-anchor="end">고정</text>
+<text x="541.9" y="159.0" font-size="11" font-weight="400" fill="#52514e" text-anchor="start">정찰</text>
+<text x="108.0" y="208.0" font-size="12" font-weight="400" fill="#52514e" text-anchor="start">구간별 체력</text>
+<line x1="368.1" y1="204.0" x2="525.6" y2="204.0" stroke="#c3c2b7" stroke-width="2" stroke-linecap="round"/>
+<circle cx="368.1" cy="204.0" r="5" fill="#1baf7a" stroke="#fcfcfb" stroke-width="2"/>
+<rect x="520.6" y="199.0" width="10" height="10" rx="1.5" fill="#e34948" stroke="#fcfcfb" stroke-width="2"/>
+<circle cx="521.2" cy="204.0" r="5" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+<text x="668.0" y="208.0" font-size="12" font-weight="700" fill="#0b0b0b" text-anchor="start">−1.0%p</text>
+<text x="20.0" y="250.0" font-size="12" font-weight="700" fill="#0b0b0b" text-anchor="start">하늘과 갑각</text>
+<text x="108.0" y="250.0" font-size="12" font-weight="400" fill="#52514e" text-anchor="start">전체 체력</text>
+<line x1="318.4" y1="246.0" x2="547.6" y2="246.0" stroke="#c3c2b7" stroke-width="2" stroke-linecap="round"/>
+<circle cx="318.4" cy="246.0" r="5" fill="#1baf7a" stroke="#fcfcfb" stroke-width="2"/>
+<rect x="502.1" y="241.0" width="10" height="10" rx="1.5" fill="#e34948" stroke="#fcfcfb" stroke-width="2"/>
+<circle cx="547.6" cy="246.0" r="5" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+<text x="668.0" y="250.0" font-size="12" font-weight="700" fill="#0b0b0b" text-anchor="start">+9.2%p</text>
+<text x="108.0" y="284.0" font-size="12" font-weight="400" fill="#52514e" text-anchor="start">구간별 체력</text>
+<line x1="316.6" y1="280.0" x2="540.6" y2="280.0" stroke="#c3c2b7" stroke-width="2" stroke-linecap="round"/>
+<circle cx="316.6" cy="280.0" r="5" fill="#1baf7a" stroke="#fcfcfb" stroke-width="2"/>
+<rect x="526.8" y="275.0" width="10" height="10" rx="1.5" fill="#e34948" stroke="#fcfcfb" stroke-width="2"/>
+<circle cx="540.6" cy="280.0" r="5" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+<text x="668.0" y="284.0" font-size="12" font-weight="700" fill="#0b0b0b" text-anchor="start">+2.0%p</text>
+<text x="20.0" y="326.0" font-size="12" font-weight="700" fill="#0b0b0b" text-anchor="start">돌격</text>
+<text x="108.0" y="326.0" font-size="12" font-weight="400" fill="#52514e" text-anchor="start">전체 체력</text>
+<line x1="552.4" y1="322.0" x2="596.0" y2="322.0" stroke="#c3c2b7" stroke-width="2" stroke-linecap="round"/>
+<circle cx="552.4" cy="322.0" r="5" fill="#1baf7a" stroke="#fcfcfb" stroke-width="2"/>
+<rect x="591.0" y="317.0" width="10" height="10" rx="1.5" fill="#e34948" stroke="#fcfcfb" stroke-width="2"/>
+<circle cx="568.7" cy="322.0" r="5" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+<text x="668.0" y="326.0" font-size="12" font-weight="700" fill="#0b0b0b" text-anchor="start">−6.2%p</text>
+<text x="108.0" y="360.0" font-size="12" font-weight="400" fill="#52514e" text-anchor="start">구간별 체력</text>
+<line x1="470.6" y1="356.0" x2="581.0" y2="356.0" stroke="#c3c2b7" stroke-width="2" stroke-linecap="round"/>
+<circle cx="470.6" cy="356.0" r="5" fill="#1baf7a" stroke="#fcfcfb" stroke-width="2"/>
+<rect x="576.0" y="351.0" width="10" height="10" rx="1.5" fill="#e34948" stroke="#fcfcfb" stroke-width="2"/>
+<circle cx="535.3" cy="356.0" r="5" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+<text x="668.0" y="360.0" font-size="12" font-weight="700" fill="#0b0b0b" text-anchor="start">−10.4%p</text>
+<text x="20.0" y="402.0" font-size="12" font-weight="700" fill="#0b0b0b" text-anchor="start">작은 촌락*</text>
+<text x="108.0" y="402.0" font-size="12" font-weight="400" fill="#52514e" text-anchor="start">전체 체력</text>
+<line x1="373.4" y1="398.0" x2="557.3" y2="398.0" stroke="#c3c2b7" stroke-width="2" stroke-linecap="round"/>
+<circle cx="373.4" cy="398.0" r="5" fill="#1baf7a" stroke="#fcfcfb" stroke-width="2"/>
+<rect x="505.6" y="393.0" width="10" height="10" rx="1.5" fill="#e34948" stroke="#fcfcfb" stroke-width="2"/>
+<circle cx="557.3" cy="398.0" r="5" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+<text x="668.0" y="402.0" font-size="12" font-weight="700" fill="#0b0b0b" text-anchor="start">+10.6%p</text>
+<text x="108.0" y="436.0" font-size="12" font-weight="400" fill="#52514e" text-anchor="start">구간별 체력</text>
+<line x1="324.5" y1="432.0" x2="528.2" y2="432.0" stroke="#c3c2b7" stroke-width="2" stroke-linecap="round"/>
+<circle cx="324.5" cy="432.0" r="5" fill="#1baf7a" stroke="#fcfcfb" stroke-width="2"/>
+<rect x="477.5" y="427.0" width="10" height="10" rx="1.5" fill="#e34948" stroke="#fcfcfb" stroke-width="2"/>
+<circle cx="528.2" cy="432.0" r="5" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+<text x="668.0" y="436.0" font-size="12" font-weight="700" fill="#0b0b0b" text-anchor="start">+10.4%p</text>
+<text x="20.0" y="494.0" font-size="11" font-weight="400" fill="#52514e" text-anchor="start">* 작은 촌락: 유닛 넷과 포탑 하나로 자리 여덟을 지킨다(다른 판은 유닛과 포탑이 자리 수와 같다)</text>
+</svg>

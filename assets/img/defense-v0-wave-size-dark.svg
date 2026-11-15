@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 420" width="760" height="420" role="img" aria-label="웨이브 크기별 승률: 웨이브가 커질수록 판단형과 나머지의 차이가 커진다" font-family="&#x27;Malgun Gothic&#x27;,&#x27;Apple SD Gothic Neo&#x27;,&#x27;Noto Sans KR&#x27;,system-ui,sans-serif">
+<title>웨이브 크기별 승률: 웨이브가 커질수록 판단형과 나머지의 차이가 커진다</title>
+<rect x="0" y="0" width="760" height="420" rx="8" fill="#1a1a19"/>
+<text x="20.0" y="30.0" font-size="16" font-weight="700" fill="#f0efec" text-anchor="start">웨이브가 커질수록 판단의 몫이 커진다</text>
+<text x="20.0" y="52.0" font-size="12" font-weight="400" fill="#c3c2b7" text-anchor="start">혼성 습격. 웨이브의 묶음마다 몬스터 수를 배수만큼 늘림. 점마다 1,000판</text>
+<line x1="20.0" y1="76.0" x2="36.0" y2="76.0" stroke="#3987e5" stroke-width="2" stroke-linecap="round"/>
+<circle cx="28.0" cy="76.0" r="4" fill="#3987e5" stroke="#1a1a19" stroke-width="2"/>
+<text x="44.0" y="80.0" font-size="12" font-weight="400" fill="#f0efec" text-anchor="start">판단형: 맞춰 두고, 골라 쓴다</text>
+<line x1="380.0" y1="76.0" x2="396.0" y2="76.0" stroke="#d95926" stroke-width="2" stroke-linecap="round"/>
+<circle cx="388.0" cy="76.0" r="4" fill="#d95926" stroke="#1a1a19" stroke-width="2"/>
+<text x="404.0" y="80.0" font-size="12" font-weight="400" fill="#f0efec" text-anchor="start">무작위형: 아무렇게나 두고, 아무 때나</text>
+<line x1="20.0" y1="96.0" x2="36.0" y2="96.0" stroke="#199e70" stroke-width="2" stroke-linecap="round"/>
+<circle cx="28.0" cy="96.0" r="4" fill="#199e70" stroke="#1a1a19" stroke-width="2"/>
+<text x="44.0" y="100.0" font-size="12" font-weight="400" fill="#f0efec" text-anchor="start">발동만 판단: 아무렇게나 두고, 골라 쓴다</text>
+<line x1="380.0" y1="96.0" x2="396.0" y2="96.0" stroke="#c98500" stroke-width="2" stroke-linecap="round"/>
+<circle cx="388.0" cy="96.0" r="4" fill="#c98500" stroke="#1a1a19" stroke-width="2"/>
+<text x="404.0" y="100.0" font-size="12" font-weight="400" fill="#f0efec" text-anchor="start">배치만 판단: 맞춰 두고, 적 있는 열에 아무 때나</text>
+<text x="70.0" y="134.0" font-size="13" font-weight="700" fill="#f0efec" text-anchor="start">성벽 체력 하나</text>
+<line x1="70.0" y1="350.0" x2="350.0" y2="350.0" stroke="#383835" stroke-width="1" stroke-linecap="round"/>
+<text x="62.0" y="354.0" font-size="11" font-weight="400" fill="#898781" text-anchor="end">0%</text>
+<line x1="70.0" y1="300.0" x2="350.0" y2="300.0" stroke="#2c2c2a" stroke-width="1" stroke-linecap="round"/>
+<text x="62.0" y="304.0" font-size="11" font-weight="400" fill="#898781" text-anchor="end">25%</text>
+<line x1="70.0" y1="250.0" x2="350.0" y2="250.0" stroke="#2c2c2a" stroke-width="1" stroke-linecap="round"/>
+<text x="62.0" y="254.0" font-size="11" font-weight="400" fill="#898781" text-anchor="end">50%</text>
+<line x1="70.0" y1="200.0" x2="350.0" y2="200.0" stroke="#2c2c2a" stroke-width="1" stroke-linecap="round"/>
+<text x="62.0" y="204.0" font-size="11" font-weight="400" fill="#898781" text-anchor="end">75%</text>
+<line x1="70.0" y1="150.0" x2="350.0" y2="150.0" stroke="#2c2c2a" stroke-width="1" stroke-linecap="round"/>
+<text x="62.0" y="154.0" font-size="11" font-weight="400" fill="#898781" text-anchor="end">100%</text>
+<text x="84.0" y="368.0" font-size="11" font-weight="400" fill="#898781" text-anchor="middle">1배</text>
+<text x="168.0" y="368.0" font-size="11" font-weight="400" fill="#898781" text-anchor="middle">1.5배</text>
+<text x="252.0" y="368.0" font-size="11" font-weight="400" fill="#898781" text-anchor="middle">2배</text>
+<text x="336.0" y="368.0" font-size="11" font-weight="400" fill="#898781" text-anchor="middle">2.5배</text>
+<polyline points="84.0,153.6 168.0,216.0 252.0,343.2 336.0,350.0" fill="none" stroke="#c98500" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="84.0" cy="153.6" r="4" fill="#c98500" stroke="#1a1a19" stroke-width="2"/>
+<circle cx="168.0" cy="216.0" r="4" fill="#c98500" stroke="#1a1a19" stroke-width="2"/>
+<circle cx="252.0" cy="343.2" r="4" fill="#c98500" stroke="#1a1a19" stroke-width="2"/>
+<circle cx="336.0" cy="350.0" r="4" fill="#c98500" stroke="#1a1a19" stroke-width="2"/>
+<polyline points="84.0,190.2 168.0,197.2 252.0,263.4 336.0,344.6" fill="none" stroke="#199e70" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="84.0" cy="190.2" r="4" fill="#199e70" stroke="#1a1a19" stroke-width="2"/>
+<circle cx="168.0" cy="197.2" r="4" fill="#199e70" stroke="#1a1a19" stroke-width="2"/>
+<circle cx="252.0" cy="263.4" r="4" fill="#199e70" stroke="#1a1a19" stroke-width="2"/>
+<circle cx="336.0" cy="344.6" r="4" fill="#199e70" stroke="#1a1a19" stroke-width="2"/>
+<polyline points="84.0,222.2 168.0,323.4 252.0,349.8 336.0,350.0" fill="none" stroke="#d95926" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="84.0" cy="222.2" r="4" fill="#d95926" stroke="#1a1a19" stroke-width="2"/>
+<circle cx="168.0" cy="323.4" r="4" fill="#d95926" stroke="#1a1a19" stroke-width="2"/>
+<circle cx="252.0" cy="349.8" r="4" fill="#d95926" stroke="#1a1a19" stroke-width="2"/>
+<circle cx="336.0" cy="350.0" r="4" fill="#d95926" stroke="#1a1a19" stroke-width="2"/>
+<polyline points="84.0,156.0 168.0,159.4 252.0,197.8 336.0,321.8" fill="none" stroke="#3987e5" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="84.0" cy="156.0" r="4" fill="#3987e5" stroke="#1a1a19" stroke-width="2"/>
+<circle cx="168.0" cy="159.4" r="4" fill="#3987e5" stroke="#1a1a19" stroke-width="2"/>
+<circle cx="252.0" cy="197.8" r="4" fill="#3987e5" stroke="#1a1a19" stroke-width="2"/>
+<circle cx="336.0" cy="321.8" r="4" fill="#3987e5" stroke="#1a1a19" stroke-width="2"/>
+<text x="177.0" y="151.4" font-size="11" font-weight="400" fill="#c3c2b7" text-anchor="start">판단형</text>
+<text x="177.0" y="315.4" font-size="11" font-weight="400" fill="#c3c2b7" text-anchor="start">무작위형</text>
+<text x="177.0" y="189.2" font-size="11" font-weight="400" fill="#c3c2b7" text-anchor="start">발동만</text>
+<text x="158.0" y="234.0" font-size="11" font-weight="400" fill="#c3c2b7" text-anchor="end">배치만</text>
+<text x="440.0" y="134.0" font-size="13" font-weight="700" fill="#f0efec" text-anchor="start">구간별 성벽 체력</text>
+<line x1="440.0" y1="350.0" x2="720.0" y2="350.0" stroke="#383835" stroke-width="1" stroke-linecap="round"/>
+<text x="432.0" y="354.0" font-size="11" font-weight="400" fill="#898781" text-anchor="end">0%</text>
+<line x1="440.0" y1="300.0" x2="720.0" y2="300.0" stroke="#2c2c2a" stroke-width="1" stroke-linecap="round"/>
+<text x="432.0" y="304.0" font-size="11" font-weight="400" fill="#898781" text-anchor="end">25%</text>
+<line x1="440.0" y1="250.0" x2="720.0" y2="250.0" stroke="#2c2c2a" stroke-width="1" stroke-linecap="round"/>
+<text x="432.0" y="254.0" font-size="11" font-weight="400" fill="#898781" text-anchor="end">50%</text>
+<line x1="440.0" y1="200.0" x2="720.0" y2="200.0" stroke="#2c2c2a" stroke-width="1" stroke-linecap="round"/>
+<text x="432.0" y="204.0" font-size="11" font-weight="400" fill="#898781" text-anchor="end">75%</text>
+<line x1="440.0" y1="150.0" x2="720.0" y2="150.0" stroke="#2c2c2a" stroke-width="1" stroke-linecap="round"/>
+<text x="432.0" y="154.0" font-size="11" font-weight="400" fill="#898781" text-anchor="end">100%</text>
+<text x="454.0" y="368.0" font-size="11" font-weight="400" fill="#898781" text-anchor="middle">1배</text>
+<text x="538.0" y="368.0" font-size="11" font-weight="400" fill="#898781" text-anchor="middle">1.5배</text>
+<text x="622.0" y="368.0" font-size="11" font-weight="400" fill="#898781" text-anchor="middle">2배</text>
+<text x="706.0" y="368.0" font-size="11" font-weight="400" fill="#898781" text-anchor="middle">2.5배</text>
+<polyline points="454.0,199.4 538.0,326.8 622.0,350.0 706.0,350.0" fill="none" stroke="#c98500" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="454.0" cy="199.4" r="4" fill="#c98500" stroke="#1a1a19" stroke-width="2"/>
+<circle cx="538.0" cy="326.8" r="4" fill="#c98500" stroke="#1a1a19" stroke-width="2"/>
+<circle cx="622.0" cy="350.0" r="4" fill="#c98500" stroke="#1a1a19" stroke-width="2"/>
+<circle cx="706.0" cy="350.0" r="4" fill="#c98500" stroke="#1a1a19" stroke-width="2"/>
+<polyline points="454.0,195.6 538.0,241.6 622.0,332.4 706.0,349.8" fill="none" stroke="#199e70" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="454.0" cy="195.6" r="4" fill="#199e70" stroke="#1a1a19" stroke-width="2"/>
+<circle cx="538.0" cy="241.6" r="4" fill="#199e70" stroke="#1a1a19" stroke-width="2"/>
+<circle cx="622.0" cy="332.4" r="4" fill="#199e70" stroke="#1a1a19" stroke-width="2"/>
+<circle cx="706.0" cy="349.8" r="4" fill="#199e70" stroke="#1a1a19" stroke-width="2"/>
+<polyline points="454.0,294.4 538.0,348.6 622.0,350.0 706.0,350.0" fill="none" stroke="#d95926" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="454.0" cy="294.4" r="4" fill="#d95926" stroke="#1a1a19" stroke-width="2"/>
+<circle cx="538.0" cy="348.6" r="4" fill="#d95926" stroke="#1a1a19" stroke-width="2"/>
+<circle cx="622.0" cy="350.0" r="4" fill="#d95926" stroke="#1a1a19" stroke-width="2"/>
+<circle cx="706.0" cy="350.0" r="4" fill="#d95926" stroke="#1a1a19" stroke-width="2"/>
+<polyline points="454.0,159.6 538.0,179.6 622.0,288.0 706.0,349.0" fill="none" stroke="#3987e5" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="454.0" cy="159.6" r="4" fill="#3987e5" stroke="#1a1a19" stroke-width="2"/>
+<circle cx="538.0" cy="179.6" r="4" fill="#3987e5" stroke="#1a1a19" stroke-width="2"/>
+<circle cx="622.0" cy="288.0" r="4" fill="#3987e5" stroke="#1a1a19" stroke-width="2"/>
+<circle cx="706.0" cy="349.0" r="4" fill="#3987e5" stroke="#1a1a19" stroke-width="2"/>
+<text x="380.0" y="390.0" font-size="11" font-weight="400" fill="#898781" text-anchor="middle">웨이브 크기 (기준 웨이브 = 1배)</text>
+</svg>
