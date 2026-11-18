@@ -1,34 +1,28 @@
 {% comment %}
-  Chirpy가 <head> 끝에서 부르는 빈 자리(테마 원본은 주석 한 줄뿐)에 글 조회수를 붙인다.
-  - 글(layout: post)에서만 동작한다.
-  - 숫자는 hits.sh 배지(무료, 가입 없음)가 "오늘 / 누적"으로 그린다. 이미지가 한 번 불릴 때마다 1이 오른다
+  Chirpy가 <head> 끝에서 부르는 빈 자리(테마 원본은 주석 한 줄뿐)에 사이트 방문 수를 붙인다.
+  - 모든 페이지에서 사이드바 소개 문구(.site-subtitle) 바로 아래에 "Today / Total" 배지를 넣는다.
+  - 숫자는 hits.sh 배지(무료, 가입 없음)가 그린다. 사이트의 어느 페이지든 한 번 열릴 때마다 1이 오른다
     (새로고침·작성자 방문 포함, 같은 사람을 따로 세지 않는다).
   - hits.sh는 CORS 헤더를 주지 않아 숫자만 따로 읽을 수 없으므로 배지 이미지를 그대로 넣는다.
-  - 집계 키는 사이트 주소 + 글 주소다. 글 주소(permalink)를 바꾸면 그 글의 숫자는 0부터 다시 센다.
+  - 집계 키는 사이트 주소 하나다(hits.sh/inhwan98.github.io.svg).
+  - 스크립트 안에 '//' 주석을 쓰지 않는다. 테마가 HTML을 한 줄로 압축해서 그 뒤 코드가 모두 주석이 된다.
 {% endcomment %}
-{% if page.layout == 'post' %}
-  {% assign hits_host = site.url | remove: 'https://' | remove: 'http://' %}
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      const readtime = document.querySelector('article header .post-meta .readtime');
-      if (!readtime) return;
+{% assign hits_host = site.url | remove: 'https://' | remove: 'http://' %}
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const subtitle = document.querySelector('#sidebar .site-subtitle');
+    if (!subtitle) return;
 
-      {% comment %}
-        끝의 '/'는 JS에서 지운다(remove_last 필터는 이 사이트의 Liquid에서 동작하지 않았다).
-        이 안에 '//' 주석을 쓰지 않는다. 테마가 HTML을 한 줄로 압축해서 그 뒤 코드가 모두 주석이 된다.
-      {% endcomment %}
-      const path = '{{ page.url }}'.replace(/\/$/, '');
-      const badge = document.createElement('img');
-      badge.src =
-        'https://hits.sh/{{ hits_host }}' + path + '.svg' +
-        '?view=today-total&label=%EC%98%A4%EB%8A%98%20%2F%20%EB%88%84%EC%A0%81' +
-        '&color=6c757d&labelColor=495057';
-      badge.alt = '오늘 / 누적 조회수';
-      badge.title = '오늘 / 누적 조회수';
-      badge.loading = 'eager';
-      badge.style.cssText = 'height:1.25em;vertical-align:-0.3em;margin-right:0.6rem;';
+    const badge = document.createElement('img');
+    badge.src =
+      'https://hits.sh/{{ hits_host }}.svg' +
+      '?view=today-total&label=Today%20%2F%20Total' +
+      '&color=6c757d&labelColor=495057';
+    badge.alt = 'Today / Total 방문 수';
+    badge.title = '오늘 / 누적 방문 수';
+    badge.loading = 'eager';
+    badge.style.cssText = 'display:block;height:20px;margin-top:0.75rem;';
 
-      readtime.parentNode.insertBefore(badge, readtime);
-    });
-  </script>
-{% endif %}
+    subtitle.insertAdjacentElement('afterend', badge);
+  });
+</script>

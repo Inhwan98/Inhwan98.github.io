@@ -6,7 +6,7 @@ theme: jekyll-theme-chirpy
 lang: ko-KR
 timezone: Asia/Seoul
 
-title: 박인환 개발 블로그
+title: Inan Dev Log
 tagline: Unity 클라이언트 프로그래머의 게임 개발 기록
 description: >-
   Unity 클라이언트 프로그래머 박인환의 블로그.
