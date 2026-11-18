@@ -8,15 +8,16 @@
 {% endcomment %}
 {% if page.layout == 'post' %}
   {% assign hits_host = site.url | remove: 'https://' | remove: 'http://' %}
-  {% assign hits_path = page.url | remove_last: '/' %}
   <script>
     document.addEventListener('DOMContentLoaded', () => {
       const readtime = document.querySelector('article header .post-meta .readtime');
       if (!readtime) return;
 
+      // 끝의 '/'는 JS에서 지운다(remove_last 필터는 이 사이트의 Liquid에서 동작하지 않았다).
+      const path = '{{ page.url }}'.replace(/\/$/, '');
       const badge = document.createElement('img');
       badge.src =
-        'https://hits.sh/{{ hits_host }}{{ hits_path }}.svg' +
+        'https://hits.sh/{{ hits_host }}' + path + '.svg' +
         '?view=today-total&label=%EC%98%A4%EB%8A%98%20%2F%20%EB%88%84%EC%A0%81' +
         '&color=6c757d&labelColor=495057';
       badge.alt = '오늘 / 누적 조회수';
