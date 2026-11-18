@@ -1,0 +1,30 @@
+{% comment %}
+  Chirpy가 <head> 끝에서 부르는 빈 자리(테마 원본은 주석 한 줄뿐)에 글 조회수를 붙인다.
+  - 글(layout: post)에서만 동작한다.
+  - 숫자는 hits.sh 배지(무료, 가입 없음)가 "오늘 / 누적"으로 그린다. 이미지가 한 번 불릴 때마다 1이 오른다
+    (새로고침·작성자 방문 포함, 같은 사람을 따로 세지 않는다).
+  - hits.sh는 CORS 헤더를 주지 않아 숫자만 따로 읽을 수 없으므로 배지 이미지를 그대로 넣는다.
+  - 집계 키는 사이트 주소 + 글 주소다. 글 주소(permalink)를 바꾸면 그 글의 숫자는 0부터 다시 센다.
+{% endcomment %}
+{% if page.layout == 'post' %}
+  {% assign hits_host = site.url | remove: 'https://' | remove: 'http://' %}
+  {% assign hits_path = page.url | remove_last: '/' %}
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const readtime = document.querySelector('article header .post-meta .readtime');
+      if (!readtime) return;
+
+      const badge = document.createElement('img');
+      badge.src =
+        'https://hits.sh/{{ hits_host }}{{ hits_path }}.svg' +
+        '?view=today-total&label=%EC%98%A4%EB%8A%98%20%2F%20%EB%88%84%EC%A0%81' +
+        '&color=6c757d&labelColor=495057';
+      badge.alt = '오늘 / 누적 조회수';
+      badge.title = '오늘 / 누적 조회수';
+      badge.loading = 'eager';
+      badge.style.cssText = 'height:1.25em;vertical-align:-0.3em;margin-right:0.6rem;';
+
+      readtime.parentNode.insertBefore(badge, readtime);
+    });
+  </script>
+{% endif %}
