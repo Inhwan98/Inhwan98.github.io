@@ -1,28 +1,61 @@
 {% comment %}
   Chirpy가 <head> 끝에서 부르는 빈 자리(테마 원본은 주석 한 줄뿐)에 사이트 방문 수를 붙인다.
   - 모든 페이지에서 사이드바 소개 문구(.site-subtitle) 바로 아래에 "Today / Total" 배지를 넣는다.
-  - 숫자는 hits.sh 배지(무료, 가입 없음)가 그린다. 사이트의 어느 페이지든 한 번 열릴 때마다 1이 오른다
-    (새로고침·작성자 방문 포함, 같은 사람을 따로 세지 않는다).
-  - hits.sh는 CORS 헤더를 주지 않아 숫자만 따로 읽을 수 없으므로 배지 이미지를 그대로 넣는다.
-  - 집계 키는 사이트 주소 하나다(hits.sh/inhwan98.github.io.svg).
+  - 같은 브라우저는 하루(한국 시간)에 한 번만 센다.
+    · 그날 처음이면 hits.sh 배지를 불러 1을 세고, 그 배지를 그대로 보여 준다.
+    · 그날 이미 셌으면 hits.sh 통계 API(숫자를 올리지 않음)를 shields.io JSON으로 읽고,
+      같은 모양의 shields.io 정적 배지로 그린다. hits.sh는 CORS 헤더가 없어 직접 읽을 수 없다.
+    · shields.io는 2분 캐시라 다시 방문한 화면의 숫자는 최대 2분 늦을 수 있다.
+  - 통계 API의 items[0].data[0]이 가장 최근 날짜다(최신순). 그 날짜가 오늘이 아니면 오늘 값은 0으로 둔다.
+  - 브라우저 저장소를 쓸 수 없으면(사생활 보호 창 등) 예전처럼 열 때마다 센다.
   - 스크립트 안에 '//' 주석을 쓰지 않는다. 테마가 HTML을 한 줄로 압축해서 그 뒤 코드가 모두 주석이 된다.
 {% endcomment %}
-{% assign hits_host = site.url | remove: 'https://' | remove: 'http://' %}
+{% assign hits_key = site.url | remove: 'https://' | remove: 'http://' %}
 <script>
   document.addEventListener('DOMContentLoaded', () => {
     const subtitle = document.querySelector('#sidebar .site-subtitle');
     if (!subtitle) return;
 
-    const badge = document.createElement('img');
-    badge.src =
-      'https://hits.sh/{{ hits_host }}.svg' +
-      '?view=today-total&label=Today%20%2F%20Total' +
-      '&color=6c757d&labelColor=495057';
-    badge.alt = 'Today / Total 방문 수';
-    badge.title = '오늘 / 누적 방문 수';
-    badge.loading = 'eager';
-    badge.style.cssText = 'display:block;height:20px;margin-top:0.75rem;';
+    const key = '{{ hits_key }}';
+    const label = 'Today%20%2F%20Total';
+    const colors = 'color=6c757d&labelColor=495057';
+    const storageKey = 'hits-counted-day';
+    const today = new Intl.DateTimeFormat('en-CA', { timeZone: 'Asia/Seoul' }).format(new Date());
 
-    subtitle.insertAdjacentElement('afterend', badge);
+    const show = (src) => {
+      const badge = document.createElement('img');
+      badge.src = src;
+      badge.alt = 'Today / Total 방문 수';
+      badge.title = '오늘 / 누적 방문 수 (같은 브라우저는 하루 한 번)';
+      badge.style.cssText = 'display:block;height:20px;margin-top:0.75rem;';
+      subtitle.insertAdjacentElement('afterend', badge);
+      return badge;
+    };
+
+    let countedDay = null;
+    try { countedDay = localStorage.getItem(storageKey); } catch (e) { countedDay = null; }
+
+    if (countedDay !== today) {
+      const badge = show('https://hits.sh/' + key + '.svg?view=today-total&label=' + label + '&' + colors);
+      badge.addEventListener('load', () => {
+        try { localStorage.setItem(storageKey, today); } catch (e) { return; }
+      });
+      return;
+    }
+
+    const api = encodeURIComponent('https://hits.sh/api/urns/' + key);
+    const read = (query) =>
+      fetch('https://img.shields.io/badge/dynamic/json.json?label=v&url=' + api + '&query=' + encodeURIComponent(query))
+        .then((response) => response.json())
+        .then((data) => String(data.value));
+
+    Promise.all([read('$.total'), read('$.items[0].data[0].*')])
+      .then(([total, latest]) => {
+        const [value, day] = latest.split(',').map((s) => s.trim());
+        const todayCount = day === today ? value : '0';
+        if (!/^\d+$/.test(total) || !/^\d+$/.test(todayCount)) return;
+        show('https://img.shields.io/badge/' + label + '-' + todayCount + '%20%2F%20' + total + '-6c757d?labelColor=495057');
+      })
+      .catch(() => {});
   });
 </script>
