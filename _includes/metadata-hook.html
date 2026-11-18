@@ -13,7 +13,10 @@
       const readtime = document.querySelector('article header .post-meta .readtime');
       if (!readtime) return;
 
-      // 끝의 '/'는 JS에서 지운다(remove_last 필터는 이 사이트의 Liquid에서 동작하지 않았다).
+      {% comment %}
+        끝의 '/'는 JS에서 지운다(remove_last 필터는 이 사이트의 Liquid에서 동작하지 않았다).
+        이 안에 '//' 주석을 쓰지 않는다. 테마가 HTML을 한 줄로 압축해서 그 뒤 코드가 모두 주석이 된다.
+      {% endcomment %}
       const path = '{{ page.url }}'.replace(/\/$/, '');
       const badge = document.createElement('img');
       badge.src =
